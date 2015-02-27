@@ -1,0 +1,14 @@
+C:\Users\gabito\Desktop\Proyecto\ProyectoBeca\ProyectoBeca\bin\Debug\ProyectoBeca.exe
+C:\Users\gabito\Desktop\Proyecto\ProyectoBeca\ProyectoBeca\bin\Debug\ProyectoBeca.pdb
+C:\Users\gabito\Desktop\Proyecto\ProyectoBeca\ProyectoBeca\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\gabito\Desktop\Proyecto\ProyectoBeca\ProyectoBeca\obj\Debug\ProyectoBeca.Properties.Resources.resources
+C:\Users\gabito\Desktop\Proyecto\ProyectoBeca\ProyectoBeca\obj\Debug\ProyectoBeca.csproj.GenerateResource.Cache
+C:\Users\gabito\Desktop\Proyecto\ProyectoBeca\ProyectoBeca\obj\Debug\ProyectoBeca.exe
+C:\Users\gabito\Desktop\Proyecto\ProyectoBeca\ProyectoBeca\obj\Debug\ProyectoBeca.pdb
+C:\Users\gabito\Desktop\Proyecto\ProyectoBeca\ProyectoBeca\obj\Debug\ProyectoBeca.Candidato.Alta.resources
+C:\Users\gabito\Desktop\Proyecto\ProyectoBeca\ProyectoBeca\obj\Debug\ProyectoBeca.Candidato.Baja.resources
+C:\Users\gabito\Desktop\Proyecto\ProyectoBeca\ProyectoBeca\obj\Debug\ProyectoBeca.Candidato.Historial.resources
+C:\Users\gabito\Desktop\Proyecto\ProyectoBeca\ProyectoBeca\obj\Debug\ProyectoBeca.Candidato.Modificacion.resources
+C:\Users\gabito\Desktop\Proyecto\ProyectoBeca\ProyectoBeca\obj\Debug\ProyectoBeca.FormBase.resources
+C:\Users\gabito\Desktop\Proyecto\ProyectoBeca\ProyectoBeca\obj\Debug\ProyectoBeca.IngresoSistema.resources
+C:\Users\gabito\Desktop\Proyecto\ProyectoBeca\ProyectoBeca\obj\Debug\ProyectoBeca.Candidato.Cursos_capacitaciones.resources
