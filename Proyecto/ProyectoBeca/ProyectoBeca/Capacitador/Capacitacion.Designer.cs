@@ -1,6 +1,6 @@
-﻿namespace ProyectoBeca.Candidato
+﻿namespace ProyectoBeca.Capacitador
 {
-    partial class Cursos_capacitaciones
+    partial class Capacitacion
     {
         /// <summary>
         /// Required designer variable.
@@ -28,14 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.button_volver = new System.Windows.Forms.Button();
+            this.groupBox_areas_posibles = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Area = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Seleccionar = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.groupBox_areas_posibles = new System.Windows.Forms.GroupBox();
-            this.button_volver = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox_areas_posibles.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // button_volver
+            // 
+            this.button_volver.Location = new System.Drawing.Point(537, 253);
+            this.button_volver.Name = "button_volver";
+            this.button_volver.Size = new System.Drawing.Size(75, 23);
+            this.button_volver.TabIndex = 4;
+            this.button_volver.Text = "Volver";
+            this.button_volver.UseVisualStyleBackColor = true;
+            this.button_volver.Click += new System.EventHandler(this.button_volver_Click);
+            // 
+            // groupBox_areas_posibles
+            // 
+            this.groupBox_areas_posibles.Controls.Add(this.dataGridView1);
+            this.groupBox_areas_posibles.Location = new System.Drawing.Point(12, 9);
+            this.groupBox_areas_posibles.Name = "groupBox_areas_posibles";
+            this.groupBox_areas_posibles.Size = new System.Drawing.Size(600, 238);
+            this.groupBox_areas_posibles.TabIndex = 3;
+            this.groupBox_areas_posibles.TabStop = false;
+            this.groupBox_areas_posibles.Text = "Areas posibles";
             // 
             // dataGridView1
             // 
@@ -61,27 +81,7 @@
             this.Seleccionar.Text = "Agregar";
             this.Seleccionar.UseColumnTextForButtonValue = true;
             // 
-            // groupBox_areas_posibles
-            // 
-            this.groupBox_areas_posibles.Controls.Add(this.dataGridView1);
-            this.groupBox_areas_posibles.Location = new System.Drawing.Point(12, 12);
-            this.groupBox_areas_posibles.Name = "groupBox_areas_posibles";
-            this.groupBox_areas_posibles.Size = new System.Drawing.Size(600, 238);
-            this.groupBox_areas_posibles.TabIndex = 1;
-            this.groupBox_areas_posibles.TabStop = false;
-            this.groupBox_areas_posibles.Text = "Areas posibles";
-            // 
-            // button_volver
-            // 
-            this.button_volver.Location = new System.Drawing.Point(537, 256);
-            this.button_volver.Name = "button_volver";
-            this.button_volver.Size = new System.Drawing.Size(75, 23);
-            this.button_volver.TabIndex = 2;
-            this.button_volver.Text = "Volver";
-            this.button_volver.UseVisualStyleBackColor = true;
-            this.button_volver.Click += new System.EventHandler(this.button_volver_Click);
-            // 
-            // Cursos_capacitaciones
+            // Capacitacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -90,21 +90,21 @@
             this.Controls.Add(this.groupBox_areas_posibles);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
-            this.Name = "Cursos_capacitaciones";
+            this.Name = "Capacitacion";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Cursos y capacitaciones";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Text = "Areas de capacitacion";
             this.groupBox_areas_posibles.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
+        private System.Windows.Forms.Button button_volver;
+        private System.Windows.Forms.GroupBox groupBox_areas_posibles;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Area;
         private System.Windows.Forms.DataGridViewButtonColumn Seleccionar;
-        private System.Windows.Forms.GroupBox groupBox_areas_posibles;
-        private System.Windows.Forms.Button button_volver;
     }
 }

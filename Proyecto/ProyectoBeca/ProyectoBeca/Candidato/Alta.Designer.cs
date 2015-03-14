@@ -41,33 +41,33 @@
             this.label_terciario = new System.Windows.Forms.Label();
             this.label_universitario = new System.Windows.Forms.Label();
             this.groupBox_info_personal = new System.Windows.Forms.GroupBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBox_barrio = new System.Windows.Forms.ComboBox();
+            this.textBox_tel_numero = new System.Windows.Forms.TextBox();
+            this.textBox_cuit_cuil = new System.Windows.Forms.TextBox();
+            this.textBox_email = new System.Windows.Forms.TextBox();
+            this.textBox_tel_caracteristica = new System.Windows.Forms.TextBox();
+            this.textBox_apellido = new System.Windows.Forms.TextBox();
+            this.textBox_nombre = new System.Windows.Forms.TextBox();
+            this.dateTimePicker_nacimiento = new System.Windows.Forms.DateTimePicker();
             this.groupBox_Intereses = new System.Windows.Forms.GroupBox();
             this.richTextBox_intereses = new System.Windows.Forms.RichTextBox();
             this.groupBox_formacion = new System.Windows.Forms.GroupBox();
-            this.label_primario = new System.Windows.Forms.Label();
-            this.comboBox_opciones_primario = new System.Windows.Forms.ComboBox();
-            this.comboBox_opciones_secundario = new System.Windows.Forms.ComboBox();
-            this.comboBox_opciones_universitario = new System.Windows.Forms.ComboBox();
-            this.comboBox_opciones_terciario = new System.Windows.Forms.ComboBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.button_agregar = new System.Windows.Forms.Button();
+            this.dataGridView_cursos_capacitaciones = new System.Windows.Forms.DataGridView();
+            this.comboBox_opciones_terciario = new System.Windows.Forms.ComboBox();
+            this.comboBox_opciones_universitario = new System.Windows.Forms.ComboBox();
+            this.comboBox_opciones_secundario = new System.Windows.Forms.ComboBox();
+            this.comboBox_opciones_primario = new System.Windows.Forms.ComboBox();
+            this.label_primario = new System.Windows.Forms.Label();
             this.groupBox_observaciones = new System.Windows.Forms.GroupBox();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.button_volver = new System.Windows.Forms.Button();
+            this.richTextBox_observaciones = new System.Windows.Forms.RichTextBox();
             this.button_guardar = new System.Windows.Forms.Button();
             this.button_limpiar = new System.Windows.Forms.Button();
+            this.button_cerrar = new System.Windows.Forms.Button();
             this.groupBox_info_personal.SuspendLayout();
             this.groupBox_Intereses.SuspendLayout();
             this.groupBox_formacion.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_cursos_capacitaciones)).BeginInit();
             this.groupBox_observaciones.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -181,14 +181,14 @@
             // 
             // groupBox_info_personal
             // 
-            this.groupBox_info_personal.Controls.Add(this.comboBox1);
-            this.groupBox_info_personal.Controls.Add(this.textBox5);
-            this.groupBox_info_personal.Controls.Add(this.textBox6);
-            this.groupBox_info_personal.Controls.Add(this.textBox4);
-            this.groupBox_info_personal.Controls.Add(this.textBox3);
-            this.groupBox_info_personal.Controls.Add(this.textBox2);
-            this.groupBox_info_personal.Controls.Add(this.textBox1);
-            this.groupBox_info_personal.Controls.Add(this.dateTimePicker1);
+            this.groupBox_info_personal.Controls.Add(this.comboBox_barrio);
+            this.groupBox_info_personal.Controls.Add(this.textBox_tel_numero);
+            this.groupBox_info_personal.Controls.Add(this.textBox_cuit_cuil);
+            this.groupBox_info_personal.Controls.Add(this.textBox_email);
+            this.groupBox_info_personal.Controls.Add(this.textBox_tel_caracteristica);
+            this.groupBox_info_personal.Controls.Add(this.textBox_apellido);
+            this.groupBox_info_personal.Controls.Add(this.textBox_nombre);
+            this.groupBox_info_personal.Controls.Add(this.dateTimePicker_nacimiento);
             this.groupBox_info_personal.Controls.Add(this.label_apellido);
             this.groupBox_info_personal.Controls.Add(this.label_mail);
             this.groupBox_info_personal.Controls.Add(this.label_cuit_cuil);
@@ -203,62 +203,111 @@
             this.groupBox_info_personal.TabStop = false;
             this.groupBox_info_personal.Text = "Informacion personal";
             // 
-            // dateTimePicker1
+            // comboBox_barrio
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(153, 141);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker1.TabIndex = 11;
+            this.comboBox_barrio.Items.AddRange(new object[] {
+            "Agronomía",
+            "Almagro",
+            "Balvanera",
+            "Barracas",
+            "Belgrano",
+            "Boedo",
+            "Caballito",
+            "Chacarita",
+            "Coghlan",
+            "Colegiales",
+            "Constitución",
+            "Flores",
+            "Floresta",
+            "La Boca",
+            "La Paternal",
+            "Liniers",
+            "Mataderos",
+            "Monte Castro",
+            "Monserrat (originalmente llamado Montserrat).",
+            "Nueva Pompeya",
+            "Núñez",
+            "Palermo",
+            "Parque Avellaneda",
+            "Parque Chacabuco",
+            "Parque Chas",
+            "Parque Patricios",
+            "Puerto Madero",
+            "Recoleta",
+            "Retiro",
+            "Saavedra",
+            "San Cristóbal",
+            "San Nicolás",
+            "San Telmo",
+            "Vélez Sársfield",
+            "Versalles",
+            "Villa Crespo",
+            "Villa del Parque",
+            "Villa Devoto",
+            "Villa General Mitre",
+            "Villa Lugano",
+            "Villa Luro",
+            "Villa Ortúzar",
+            "Villa Pueyrredón",
+            "Villa Real",
+            "Villa Riachuelo",
+            "Villa Santa Rita",
+            "Villa Soldati",
+            "Villa Urquiza"});
+            this.comboBox_barrio.Location = new System.Drawing.Point(153, 170);
+            this.comboBox_barrio.Name = "comboBox_barrio";
+            this.comboBox_barrio.Size = new System.Drawing.Size(200, 21);
+            this.comboBox_barrio.TabIndex = 19;
             // 
-            // textBox1
+            // textBox_tel_numero
             // 
-            this.textBox1.Location = new System.Drawing.Point(153, 49);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(200, 20);
-            this.textBox1.TabIndex = 12;
+            this.textBox_tel_numero.Location = new System.Drawing.Point(206, 198);
+            this.textBox_tel_numero.Name = "textBox_tel_numero";
+            this.textBox_tel_numero.Size = new System.Drawing.Size(147, 20);
+            this.textBox_tel_numero.TabIndex = 18;
             // 
-            // textBox2
+            // textBox_cuit_cuil
             // 
-            this.textBox2.Location = new System.Drawing.Point(153, 80);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(200, 20);
-            this.textBox2.TabIndex = 13;
+            this.textBox_cuit_cuil.Location = new System.Drawing.Point(153, 111);
+            this.textBox_cuit_cuil.Name = "textBox_cuit_cuil";
+            this.textBox_cuit_cuil.Size = new System.Drawing.Size(200, 20);
+            this.textBox_cuit_cuil.TabIndex = 17;
             // 
-            // textBox3
+            // textBox_email
             // 
-            this.textBox3.Location = new System.Drawing.Point(153, 198);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(47, 20);
-            this.textBox3.TabIndex = 14;
+            this.textBox_email.Location = new System.Drawing.Point(153, 224);
+            this.textBox_email.Name = "textBox_email";
+            this.textBox_email.Size = new System.Drawing.Size(200, 20);
+            this.textBox_email.TabIndex = 15;
             // 
-            // textBox4
+            // textBox_tel_caracteristica
             // 
-            this.textBox4.Location = new System.Drawing.Point(153, 224);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(200, 20);
-            this.textBox4.TabIndex = 15;
+            this.textBox_tel_caracteristica.Location = new System.Drawing.Point(153, 198);
+            this.textBox_tel_caracteristica.Name = "textBox_tel_caracteristica";
+            this.textBox_tel_caracteristica.Size = new System.Drawing.Size(47, 20);
+            this.textBox_tel_caracteristica.TabIndex = 14;
             // 
-            // textBox6
+            // textBox_apellido
             // 
-            this.textBox6.Location = new System.Drawing.Point(153, 111);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(200, 20);
-            this.textBox6.TabIndex = 17;
+            this.textBox_apellido.Location = new System.Drawing.Point(153, 80);
+            this.textBox_apellido.Name = "textBox_apellido";
+            this.textBox_apellido.Size = new System.Drawing.Size(200, 20);
+            this.textBox_apellido.TabIndex = 13;
+            this.textBox_apellido.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
-            // textBox5
+            // textBox_nombre
             // 
-            this.textBox5.Location = new System.Drawing.Point(206, 198);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(147, 20);
-            this.textBox5.TabIndex = 18;
+            this.textBox_nombre.Location = new System.Drawing.Point(153, 49);
+            this.textBox_nombre.Name = "textBox_nombre";
+            this.textBox_nombre.Size = new System.Drawing.Size(200, 20);
+            this.textBox_nombre.TabIndex = 12;
             // 
-            // comboBox1
+            // dateTimePicker_nacimiento
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(153, 170);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(200, 21);
-            this.comboBox1.TabIndex = 19;
+            this.dateTimePicker_nacimiento.Location = new System.Drawing.Point(153, 141);
+            this.dateTimePicker_nacimiento.Name = "dateTimePicker_nacimiento";
+            this.dateTimePicker_nacimiento.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker_nacimiento.TabIndex = 11;
             // 
             // groupBox_Intereses
             // 
@@ -281,7 +330,7 @@
             // groupBox_formacion
             // 
             this.groupBox_formacion.Controls.Add(this.button_agregar);
-            this.groupBox_formacion.Controls.Add(this.dataGridView1);
+            this.groupBox_formacion.Controls.Add(this.dataGridView_cursos_capacitaciones);
             this.groupBox_formacion.Controls.Add(this.comboBox_opciones_terciario);
             this.groupBox_formacion.Controls.Add(this.comboBox_opciones_universitario);
             this.groupBox_formacion.Controls.Add(this.comboBox_opciones_secundario);
@@ -299,6 +348,70 @@
             this.groupBox_formacion.Text = "Formacion";
             this.groupBox_formacion.Enter += new System.EventHandler(this.groupBox_formacion_Enter);
             // 
+            // button_agregar
+            // 
+            this.button_agregar.Location = new System.Drawing.Point(306, 250);
+            this.button_agregar.Name = "button_agregar";
+            this.button_agregar.Size = new System.Drawing.Size(75, 23);
+            this.button_agregar.TabIndex = 20;
+            this.button_agregar.Text = "Agregar";
+            this.button_agregar.UseVisualStyleBackColor = true;
+            this.button_agregar.Click += new System.EventHandler(this.button_agregar_Click);
+            // 
+            // dataGridView_cursos_capacitaciones
+            // 
+            this.dataGridView_cursos_capacitaciones.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView_cursos_capacitaciones.Location = new System.Drawing.Point(23, 168);
+            this.dataGridView_cursos_capacitaciones.Name = "dataGridView_cursos_capacitaciones";
+            this.dataGridView_cursos_capacitaciones.Size = new System.Drawing.Size(358, 76);
+            this.dataGridView_cursos_capacitaciones.TabIndex = 19;
+            // 
+            // comboBox_opciones_terciario
+            // 
+            this.comboBox_opciones_terciario.FormattingEnabled = true;
+            this.comboBox_opciones_terciario.Items.AddRange(new object[] {
+            "Completo",
+            "Incompleto ",
+            "No"});
+            this.comboBox_opciones_terciario.Location = new System.Drawing.Point(175, 76);
+            this.comboBox_opciones_terciario.Name = "comboBox_opciones_terciario";
+            this.comboBox_opciones_terciario.Size = new System.Drawing.Size(121, 21);
+            this.comboBox_opciones_terciario.TabIndex = 18;
+            // 
+            // comboBox_opciones_universitario
+            // 
+            this.comboBox_opciones_universitario.FormattingEnabled = true;
+            this.comboBox_opciones_universitario.Items.AddRange(new object[] {
+            "Completo",
+            "Incompleto",
+            "No"});
+            this.comboBox_opciones_universitario.Location = new System.Drawing.Point(175, 105);
+            this.comboBox_opciones_universitario.Name = "comboBox_opciones_universitario";
+            this.comboBox_opciones_universitario.Size = new System.Drawing.Size(121, 21);
+            this.comboBox_opciones_universitario.TabIndex = 17;
+            // 
+            // comboBox_opciones_secundario
+            // 
+            this.comboBox_opciones_secundario.FormattingEnabled = true;
+            this.comboBox_opciones_secundario.Items.AddRange(new object[] {
+            "Completo",
+            "No"});
+            this.comboBox_opciones_secundario.Location = new System.Drawing.Point(176, 49);
+            this.comboBox_opciones_secundario.Name = "comboBox_opciones_secundario";
+            this.comboBox_opciones_secundario.Size = new System.Drawing.Size(121, 21);
+            this.comboBox_opciones_secundario.TabIndex = 16;
+            // 
+            // comboBox_opciones_primario
+            // 
+            this.comboBox_opciones_primario.FormattingEnabled = true;
+            this.comboBox_opciones_primario.Items.AddRange(new object[] {
+            "Completo",
+            "No"});
+            this.comboBox_opciones_primario.Location = new System.Drawing.Point(176, 19);
+            this.comboBox_opciones_primario.Name = "comboBox_opciones_primario";
+            this.comboBox_opciones_primario.Size = new System.Drawing.Size(121, 21);
+            this.comboBox_opciones_primario.TabIndex = 15;
+            // 
             // label_primario
             // 
             this.label_primario.AutoSize = true;
@@ -308,58 +421,9 @@
             this.label_primario.TabIndex = 14;
             this.label_primario.Text = "Primario";
             // 
-            // comboBox_opciones_primario
-            // 
-            this.comboBox_opciones_primario.FormattingEnabled = true;
-            this.comboBox_opciones_primario.Location = new System.Drawing.Point(176, 19);
-            this.comboBox_opciones_primario.Name = "comboBox_opciones_primario";
-            this.comboBox_opciones_primario.Size = new System.Drawing.Size(121, 21);
-            this.comboBox_opciones_primario.TabIndex = 15;
-            // 
-            // comboBox_opciones_secundario
-            // 
-            this.comboBox_opciones_secundario.FormattingEnabled = true;
-            this.comboBox_opciones_secundario.Location = new System.Drawing.Point(176, 49);
-            this.comboBox_opciones_secundario.Name = "comboBox_opciones_secundario";
-            this.comboBox_opciones_secundario.Size = new System.Drawing.Size(121, 21);
-            this.comboBox_opciones_secundario.TabIndex = 16;
-            // 
-            // comboBox_opciones_universitario
-            // 
-            this.comboBox_opciones_universitario.FormattingEnabled = true;
-            this.comboBox_opciones_universitario.Location = new System.Drawing.Point(175, 105);
-            this.comboBox_opciones_universitario.Name = "comboBox_opciones_universitario";
-            this.comboBox_opciones_universitario.Size = new System.Drawing.Size(121, 21);
-            this.comboBox_opciones_universitario.TabIndex = 17;
-            // 
-            // comboBox_opciones_terciario
-            // 
-            this.comboBox_opciones_terciario.FormattingEnabled = true;
-            this.comboBox_opciones_terciario.Location = new System.Drawing.Point(175, 76);
-            this.comboBox_opciones_terciario.Name = "comboBox_opciones_terciario";
-            this.comboBox_opciones_terciario.Size = new System.Drawing.Size(121, 21);
-            this.comboBox_opciones_terciario.TabIndex = 18;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(23, 168);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(358, 76);
-            this.dataGridView1.TabIndex = 19;
-            // 
-            // button_agregar
-            // 
-            this.button_agregar.Location = new System.Drawing.Point(306, 250);
-            this.button_agregar.Name = "button_agregar";
-            this.button_agregar.Size = new System.Drawing.Size(75, 23);
-            this.button_agregar.TabIndex = 20;
-            this.button_agregar.Text = "Agregar";
-            this.button_agregar.UseVisualStyleBackColor = true;
-            // 
             // groupBox_observaciones
             // 
-            this.groupBox_observaciones.Controls.Add(this.richTextBox1);
+            this.groupBox_observaciones.Controls.Add(this.richTextBox_observaciones);
             this.groupBox_observaciones.Location = new System.Drawing.Point(422, 308);
             this.groupBox_observaciones.Name = "groupBox_observaciones";
             this.groupBox_observaciones.Size = new System.Drawing.Size(395, 114);
@@ -367,22 +431,13 @@
             this.groupBox_observaciones.TabStop = false;
             this.groupBox_observaciones.Text = "Observaciones";
             // 
-            // richTextBox1
+            // richTextBox_observaciones
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(34, 27);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(326, 61);
-            this.richTextBox1.TabIndex = 6;
-            this.richTextBox1.Text = "";
-            // 
-            // button_volver
-            // 
-            this.button_volver.Location = new System.Drawing.Point(742, 428);
-            this.button_volver.Name = "button_volver";
-            this.button_volver.Size = new System.Drawing.Size(75, 23);
-            this.button_volver.TabIndex = 15;
-            this.button_volver.Text = "Volver";
-            this.button_volver.UseVisualStyleBackColor = true;
+            this.richTextBox_observaciones.Location = new System.Drawing.Point(34, 27);
+            this.richTextBox_observaciones.Name = "richTextBox_observaciones";
+            this.richTextBox_observaciones.Size = new System.Drawing.Size(326, 61);
+            this.richTextBox_observaciones.TabIndex = 6;
+            this.richTextBox_observaciones.Text = "";
             // 
             // button_guardar
             // 
@@ -392,6 +447,7 @@
             this.button_guardar.TabIndex = 16;
             this.button_guardar.Text = "Guardar";
             this.button_guardar.UseVisualStyleBackColor = true;
+            this.button_guardar.Click += new System.EventHandler(this.button_guardar_Click);
             // 
             // button_limpiar
             // 
@@ -401,15 +457,27 @@
             this.button_limpiar.TabIndex = 17;
             this.button_limpiar.Text = "Limpiar";
             this.button_limpiar.UseVisualStyleBackColor = true;
+            this.button_limpiar.Click += new System.EventHandler(this.button_limpiar_Click);
+            // 
+            // button_cerrar
+            // 
+            this.button_cerrar.Location = new System.Drawing.Point(742, 428);
+            this.button_cerrar.Name = "button_cerrar";
+            this.button_cerrar.Size = new System.Drawing.Size(75, 23);
+            this.button_cerrar.TabIndex = 15;
+            this.button_cerrar.Text = "Cerrar";
+            this.button_cerrar.UseVisualStyleBackColor = true;
+            this.button_cerrar.Click += new System.EventHandler(this.button_cerrar_Click);
             // 
             // Alta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(834, 461);
             this.Controls.Add(this.button_limpiar);
             this.Controls.Add(this.button_guardar);
-            this.Controls.Add(this.button_volver);
+            this.Controls.Add(this.button_cerrar);
             this.Controls.Add(this.groupBox_observaciones);
             this.Controls.Add(this.groupBox_formacion);
             this.Controls.Add(this.groupBox_Intereses);
@@ -417,17 +485,17 @@
             this.Controls.Add(this.label_primaria);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Alta";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Alta";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.groupBox_info_personal.ResumeLayout(false);
             this.groupBox_info_personal.PerformLayout();
             this.groupBox_Intereses.ResumeLayout(false);
             this.groupBox_formacion.ResumeLayout(false);
             this.groupBox_formacion.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_cursos_capacitaciones)).EndInit();
             this.groupBox_observaciones.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -449,28 +517,28 @@
         private System.Windows.Forms.Label label_secundaria;
         private System.Windows.Forms.Label label_primaria;
         private System.Windows.Forms.GroupBox groupBox_info_personal;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textBox_cuit_cuil;
+        private System.Windows.Forms.TextBox textBox_email;
+        private System.Windows.Forms.TextBox textBox_tel_caracteristica;
+        private System.Windows.Forms.TextBox textBox_apellido;
+        private System.Windows.Forms.TextBox textBox_nombre;
+        private System.Windows.Forms.DateTimePicker dateTimePicker_nacimiento;
+        private System.Windows.Forms.ComboBox comboBox_barrio;
+        private System.Windows.Forms.TextBox textBox_tel_numero;
         private System.Windows.Forms.GroupBox groupBox_Intereses;
         private System.Windows.Forms.RichTextBox richTextBox_intereses;
         private System.Windows.Forms.GroupBox groupBox_formacion;
         private System.Windows.Forms.Label label_primario;
         private System.Windows.Forms.Button button_agregar;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridView_cursos_capacitaciones;
         private System.Windows.Forms.ComboBox comboBox_opciones_terciario;
         private System.Windows.Forms.ComboBox comboBox_opciones_universitario;
         private System.Windows.Forms.ComboBox comboBox_opciones_secundario;
         private System.Windows.Forms.ComboBox comboBox_opciones_primario;
         private System.Windows.Forms.GroupBox groupBox_observaciones;
-        private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.Button button_volver;
+        private System.Windows.Forms.RichTextBox richTextBox_observaciones;
         private System.Windows.Forms.Button button_guardar;
         private System.Windows.Forms.Button button_limpiar;
+        private System.Windows.Forms.Button button_cerrar;
     }
 }

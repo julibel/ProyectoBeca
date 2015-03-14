@@ -7,11 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace ProyectoBeca.Candidato
+namespace ProyectoBeca.Capacitador
 {
-    public partial class Cursos_capacitaciones : Form
+    public partial class Capacitacion : Form
     {
-        public Cursos_capacitaciones()
+        public Capacitacion()
         {
             InitializeComponent();
         }

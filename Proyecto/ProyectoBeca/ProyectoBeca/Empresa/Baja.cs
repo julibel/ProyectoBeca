@@ -15,5 +15,15 @@ namespace ProyectoBeca.Empresa
         {
             InitializeComponent();
         }
+
+        private void button_cerrar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void button_borrar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

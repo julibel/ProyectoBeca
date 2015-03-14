@@ -15,5 +15,22 @@ namespace ProyectoBeca.Candidato
         {
             InitializeComponent();
         }
+
+        private void button_borrar_Click(object sender, EventArgs e)
+        {
+            DialogResult quiereBorrar = MessageBox.Show("¿Esta seguro que quiere borrar los datos?", "Borrar candidato", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (quiereBorrar == DialogResult.Yes)
+            {
+                // borrar objeto
+                // limpio form
+
+            }
+        }
+
+        private void button_volver_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

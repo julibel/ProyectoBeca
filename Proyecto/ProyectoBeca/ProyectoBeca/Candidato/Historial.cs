@@ -15,5 +15,10 @@ namespace ProyectoBeca.Candidato
         {
             InitializeComponent();
         }
+
+        private void button_cerrar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

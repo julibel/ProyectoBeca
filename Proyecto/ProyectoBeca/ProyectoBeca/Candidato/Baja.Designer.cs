@@ -77,6 +77,7 @@
             this.button_borrar.TabIndex = 25;
             this.button_borrar.Text = "Borrar";
             this.button_borrar.UseVisualStyleBackColor = true;
+            this.button_borrar.Click += new System.EventHandler(this.button_borrar_Click);
             // 
             // button_volver
             // 
@@ -84,8 +85,9 @@
             this.button_volver.Name = "button_volver";
             this.button_volver.Size = new System.Drawing.Size(75, 23);
             this.button_volver.TabIndex = 23;
-            this.button_volver.Text = "Volver";
+            this.button_volver.Text = "Cerrar";
             this.button_volver.UseVisualStyleBackColor = true;
+            this.button_volver.Click += new System.EventHandler(this.button_volver_Click);
             // 
             // groupBox_observaciones
             // 
@@ -138,6 +140,10 @@
             // 
             this.comboBox_opciones_terciario.Enabled = false;
             this.comboBox_opciones_terciario.FormattingEnabled = true;
+            this.comboBox_opciones_terciario.Items.AddRange(new object[] {
+            "Completo",
+            "Incompleto ",
+            "No"});
             this.comboBox_opciones_terciario.Location = new System.Drawing.Point(175, 76);
             this.comboBox_opciones_terciario.Name = "comboBox_opciones_terciario";
             this.comboBox_opciones_terciario.Size = new System.Drawing.Size(121, 21);
@@ -147,6 +153,10 @@
             // 
             this.comboBox_opciones_universitario.Enabled = false;
             this.comboBox_opciones_universitario.FormattingEnabled = true;
+            this.comboBox_opciones_universitario.Items.AddRange(new object[] {
+            "Completo",
+            "Incompleto ",
+            "No"});
             this.comboBox_opciones_universitario.Location = new System.Drawing.Point(175, 105);
             this.comboBox_opciones_universitario.Name = "comboBox_opciones_universitario";
             this.comboBox_opciones_universitario.Size = new System.Drawing.Size(121, 21);
@@ -156,6 +166,9 @@
             // 
             this.comboBox_opciones_secundario.Enabled = false;
             this.comboBox_opciones_secundario.FormattingEnabled = true;
+            this.comboBox_opciones_secundario.Items.AddRange(new object[] {
+            "Completo",
+            "No"});
             this.comboBox_opciones_secundario.Location = new System.Drawing.Point(176, 49);
             this.comboBox_opciones_secundario.Name = "comboBox_opciones_secundario";
             this.comboBox_opciones_secundario.Size = new System.Drawing.Size(121, 21);
@@ -165,6 +178,9 @@
             // 
             this.comboBox_opciones_primario.Enabled = false;
             this.comboBox_opciones_primario.FormattingEnabled = true;
+            this.comboBox_opciones_primario.Items.AddRange(new object[] {
+            "Completo",
+            "No"});
             this.comboBox_opciones_primario.Location = new System.Drawing.Point(176, 19);
             this.comboBox_opciones_primario.Name = "comboBox_opciones_primario";
             this.comboBox_opciones_primario.Size = new System.Drawing.Size(121, 21);
@@ -262,6 +278,55 @@
             // 
             this.comboBox1.Enabled = false;
             this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Agronomía",
+            "Almagro",
+            "Balvanera",
+            "Barracas",
+            "Belgrano",
+            "Boedo",
+            "Caballito",
+            "Chacarita",
+            "Coghlan",
+            "Colegiales",
+            "Constitución",
+            "Flores",
+            "Floresta",
+            "La Boca",
+            "La Paternal",
+            "Liniers",
+            "Mataderos",
+            "Monte Castro",
+            "Monserrat (originalmente llamado Montserrat).",
+            "Nueva Pompeya",
+            "Núñez",
+            "Palermo",
+            "Parque Avellaneda",
+            "Parque Chacabuco",
+            "Parque Chas",
+            "Parque Patricios",
+            "Puerto Madero",
+            "Recoleta",
+            "Retiro",
+            "Saavedra",
+            "San Cristóbal",
+            "San Nicolás",
+            "San Telmo",
+            "Vélez Sársfield",
+            "Versalles",
+            "Villa Crespo",
+            "Villa del Parque",
+            "Villa Devoto",
+            "Villa General Mitre",
+            "Villa Lugano",
+            "Villa Luro",
+            "Villa Ortúzar",
+            "Villa Pueyrredón",
+            "Villa Real",
+            "Villa Riachuelo",
+            "Villa Santa Rita",
+            "Villa Soldati",
+            "Villa Urquiza"});
             this.comboBox1.Location = new System.Drawing.Point(153, 170);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(200, 21);
@@ -399,6 +464,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(834, 461);
             this.Controls.Add(this.button_borrar);
             this.Controls.Add(this.button_volver);
@@ -407,9 +473,12 @@
             this.Controls.Add(this.groupBox_Intereses);
             this.Controls.Add(this.groupBox_info_personal);
             this.Controls.Add(this.label_primaria);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Baja";
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Baja";
             this.groupBox_observaciones.ResumeLayout(false);
             this.groupBox_formacion.ResumeLayout(false);
