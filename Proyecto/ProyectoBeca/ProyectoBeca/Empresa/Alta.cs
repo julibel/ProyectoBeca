@@ -66,5 +66,10 @@ namespace ProyectoBeca.Empresa
         {
         
         }
+
+        private void richTextBox_observaciones_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

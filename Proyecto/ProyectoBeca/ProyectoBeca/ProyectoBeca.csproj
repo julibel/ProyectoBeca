@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>9.0.21022</ProductVersion>
+    <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{C3825692-59B1-415D-ABD8-FB38A995D6B7}</ProjectGuid>
     <OutputType>WinExe</OutputType>
@@ -78,6 +78,12 @@
     <Compile Include="Candidato\Modificacion.Designer.cs">
       <DependentUpon>Modificacion.cs</DependentUpon>
     </Compile>
+    <Compile Include="Candidato\Seleccion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Candidato\Seleccion.Designer.cs">
+      <DependentUpon>Seleccion.cs</DependentUpon>
+    </Compile>
     <Compile Include="Capacitacion\Alta.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,6 +107,24 @@
     </Compile>
     <Compile Include="Capacitacion\Modificacion.Designer.cs">
       <DependentUpon>Modificacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Capacitacion\Seleccion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capacitacion\Seleccion.Designer.cs">
+      <DependentUpon>Seleccion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Capacitacion\Seleccion_alumnos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capacitacion\Seleccion_alumnos.Designer.cs">
+      <DependentUpon>Seleccion_alumnos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Capacitacion\Seleccion_profesor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capacitacion\Seleccion_profesor.Designer.cs">
+      <DependentUpon>Seleccion_profesor.cs</DependentUpon>
     </Compile>
     <Compile Include="Capacitador\Alta.cs">
       <SubType>Form</SubType>
@@ -132,6 +156,12 @@
     <Compile Include="Capacitador\Modificacion.Designer.cs">
       <DependentUpon>Modificacion.cs</DependentUpon>
     </Compile>
+    <Compile Include="Capacitador\Seleccion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capacitador\Seleccion.Designer.cs">
+      <DependentUpon>Seleccion.cs</DependentUpon>
+    </Compile>
     <Compile Include="Empresa\Alta.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -143,6 +173,12 @@
     </Compile>
     <Compile Include="Empresa\Baja.Designer.cs">
       <DependentUpon>Baja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Empresa\Seleccion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Empresa\Seleccion.Designer.cs">
+      <DependentUpon>Seleccion.cs</DependentUpon>
     </Compile>
     <Compile Include="Empresa\InformeCandidatos.cs">
       <SubType>Form</SubType>
@@ -190,6 +226,30 @@
       <DependentUpon>Modificacion.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Candidato\Seleccion.resx">
+      <DependentUpon>Seleccion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capacitacion\Alta.resx">
+      <DependentUpon>Alta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capacitacion\Baja.resx">
+      <DependentUpon>Baja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capacitacion\Historial.resx">
+      <DependentUpon>Historial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capacitacion\Modificacion.resx">
+      <DependentUpon>Modificacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capacitacion\Seleccion.resx">
+      <DependentUpon>Seleccion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capacitacion\Seleccion_alumnos.resx">
+      <DependentUpon>Seleccion_alumnos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capacitacion\Seleccion_profesor.resx">
+      <DependentUpon>Seleccion_profesor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Capacitador\Alta.resx">
       <DependentUpon>Alta.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -210,6 +270,9 @@
       <DependentUpon>Modificacion.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Capacitador\Seleccion.resx">
+      <DependentUpon>Seleccion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Empresa\Alta.resx">
       <DependentUpon>Alta.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -217,6 +280,9 @@
     <EmbeddedResource Include="Empresa\Baja.resx">
       <DependentUpon>Baja.cs</DependentUpon>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Empresa\Seleccion.resx">
+      <DependentUpon>Seleccion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Empresa\InformeCandidatos.resx">
       <DependentUpon>InformeCandidatos.cs</DependentUpon>

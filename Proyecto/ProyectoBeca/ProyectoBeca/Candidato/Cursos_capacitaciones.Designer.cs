@@ -28,25 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridView_cursos_capacitaciones = new System.Windows.Forms.DataGridView();
             this.Area = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Seleccionar = new System.Windows.Forms.DataGridViewButtonColumn();
             this.groupBox_areas_posibles = new System.Windows.Forms.GroupBox();
             this.button_volver = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_cursos_capacitaciones)).BeginInit();
             this.groupBox_areas_posibles.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dataGridView_cursos_capacitaciones
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridView_cursos_capacitaciones.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView_cursos_capacitaciones.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Area,
             this.Seleccionar});
-            this.dataGridView1.Location = new System.Drawing.Point(6, 19);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(588, 205);
-            this.dataGridView1.TabIndex = 0;
+            this.dataGridView_cursos_capacitaciones.Location = new System.Drawing.Point(6, 19);
+            this.dataGridView_cursos_capacitaciones.Name = "dataGridView_cursos_capacitaciones";
+            this.dataGridView_cursos_capacitaciones.Size = new System.Drawing.Size(588, 205);
+            this.dataGridView_cursos_capacitaciones.TabIndex = 0;
             // 
             // Area
             // 
@@ -63,7 +63,7 @@
             // 
             // groupBox_areas_posibles
             // 
-            this.groupBox_areas_posibles.Controls.Add(this.dataGridView1);
+            this.groupBox_areas_posibles.Controls.Add(this.dataGridView_cursos_capacitaciones);
             this.groupBox_areas_posibles.Location = new System.Drawing.Point(12, 12);
             this.groupBox_areas_posibles.Name = "groupBox_areas_posibles";
             this.groupBox_areas_posibles.Size = new System.Drawing.Size(600, 238);
@@ -93,7 +93,7 @@
             this.Name = "Cursos_capacitaciones";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cursos y capacitaciones";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_cursos_capacitaciones)).EndInit();
             this.groupBox_areas_posibles.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -101,7 +101,7 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridView_cursos_capacitaciones;
         private System.Windows.Forms.DataGridViewTextBoxColumn Area;
         private System.Windows.Forms.DataGridViewButtonColumn Seleccionar;
         private System.Windows.Forms.GroupBox groupBox_areas_posibles;

@@ -31,23 +31,23 @@
             this.button_limpiar = new System.Windows.Forms.Button();
             this.button_guardar = new System.Windows.Forms.Button();
             this.button_cerrar = new System.Windows.Forms.Button();
-            this.groupBox_Intereses = new System.Windows.Forms.GroupBox();
-            this.richTextBox_intereses = new System.Windows.Forms.RichTextBox();
+            this.groupBox_principales_actividades = new System.Windows.Forms.GroupBox();
+            this.richTextBox_principales_actividades = new System.Windows.Forms.RichTextBox();
             this.groupBox_observaciones = new System.Windows.Forms.GroupBox();
             this.richTextBox_observaciones = new System.Windows.Forms.RichTextBox();
-            this.groupBox_info_personal = new System.Windows.Forms.GroupBox();
+            this.groupBox_info_empresa = new System.Windows.Forms.GroupBox();
             this.textBox_tel_numero = new System.Windows.Forms.TextBox();
             this.textBox_email = new System.Windows.Forms.TextBox();
             this.textBox_tel_caracteristica = new System.Windows.Forms.TextBox();
-            this.textBox_apellido = new System.Windows.Forms.TextBox();
-            this.textBox_nombre = new System.Windows.Forms.TextBox();
+            this.textBox_domicilio = new System.Windows.Forms.TextBox();
+            this.textBox_razon_social = new System.Windows.Forms.TextBox();
             this.label_domicilio = new System.Windows.Forms.Label();
             this.label_mail = new System.Windows.Forms.Label();
             this.label_razon_social = new System.Windows.Forms.Label();
             this.label_telefono = new System.Windows.Forms.Label();
-            this.groupBox_Intereses.SuspendLayout();
+            this.groupBox_principales_actividades.SuspendLayout();
             this.groupBox_observaciones.SuspendLayout();
-            this.groupBox_info_personal.SuspendLayout();
+            this.groupBox_info_empresa.SuspendLayout();
             this.SuspendLayout();
             // 
             // button_limpiar
@@ -78,23 +78,24 @@
             this.button_cerrar.UseVisualStyleBackColor = true;
             this.button_cerrar.Click += new System.EventHandler(this.button_cerrar_Click);
             // 
-            // groupBox_Intereses
+            // groupBox_principales_actividades
             // 
-            this.groupBox_Intereses.Controls.Add(this.richTextBox_intereses);
-            this.groupBox_Intereses.Location = new System.Drawing.Point(14, 316);
-            this.groupBox_Intereses.Name = "groupBox_Intereses";
-            this.groupBox_Intereses.Size = new System.Drawing.Size(395, 114);
-            this.groupBox_Intereses.TabIndex = 23;
-            this.groupBox_Intereses.TabStop = false;
-            this.groupBox_Intereses.Text = "Principales actividades";
+            this.groupBox_principales_actividades.Controls.Add(this.richTextBox_principales_actividades);
+            this.groupBox_principales_actividades.Location = new System.Drawing.Point(14, 316);
+            this.groupBox_principales_actividades.Name = "groupBox_principales_actividades";
+            this.groupBox_principales_actividades.Size = new System.Drawing.Size(395, 114);
+            this.groupBox_principales_actividades.TabIndex = 23;
+            this.groupBox_principales_actividades.TabStop = false;
+            this.groupBox_principales_actividades.Text = "Principales actividades";
+            this.groupBox_principales_actividades.Enter += new System.EventHandler(this.groupBox_Intereses_Enter);
             // 
-            // richTextBox_intereses
+            // richTextBox_principales_actividades
             // 
-            this.richTextBox_intereses.Location = new System.Drawing.Point(34, 27);
-            this.richTextBox_intereses.Name = "richTextBox_intereses";
-            this.richTextBox_intereses.Size = new System.Drawing.Size(326, 61);
-            this.richTextBox_intereses.TabIndex = 6;
-            this.richTextBox_intereses.Text = "";
+            this.richTextBox_principales_actividades.Location = new System.Drawing.Point(34, 27);
+            this.richTextBox_principales_actividades.Name = "richTextBox_principales_actividades";
+            this.richTextBox_principales_actividades.Size = new System.Drawing.Size(326, 61);
+            this.richTextBox_principales_actividades.TabIndex = 6;
+            this.richTextBox_principales_actividades.Text = "";
             // 
             // groupBox_observaciones
             // 
@@ -114,23 +115,23 @@
             this.richTextBox_observaciones.TabIndex = 6;
             this.richTextBox_observaciones.Text = "";
             // 
-            // groupBox_info_personal
+            // groupBox_info_empresa
             // 
-            this.groupBox_info_personal.Controls.Add(this.textBox_tel_numero);
-            this.groupBox_info_personal.Controls.Add(this.textBox_email);
-            this.groupBox_info_personal.Controls.Add(this.textBox_tel_caracteristica);
-            this.groupBox_info_personal.Controls.Add(this.textBox_apellido);
-            this.groupBox_info_personal.Controls.Add(this.textBox_nombre);
-            this.groupBox_info_personal.Controls.Add(this.label_domicilio);
-            this.groupBox_info_personal.Controls.Add(this.label_mail);
-            this.groupBox_info_personal.Controls.Add(this.label_razon_social);
-            this.groupBox_info_personal.Controls.Add(this.label_telefono);
-            this.groupBox_info_personal.Location = new System.Drawing.Point(14, 18);
-            this.groupBox_info_personal.Name = "groupBox_info_personal";
-            this.groupBox_info_personal.Size = new System.Drawing.Size(395, 292);
-            this.groupBox_info_personal.TabIndex = 21;
-            this.groupBox_info_personal.TabStop = false;
-            this.groupBox_info_personal.Text = "Informacion de la empresa";
+            this.groupBox_info_empresa.Controls.Add(this.textBox_tel_numero);
+            this.groupBox_info_empresa.Controls.Add(this.textBox_email);
+            this.groupBox_info_empresa.Controls.Add(this.textBox_tel_caracteristica);
+            this.groupBox_info_empresa.Controls.Add(this.textBox_domicilio);
+            this.groupBox_info_empresa.Controls.Add(this.textBox_razon_social);
+            this.groupBox_info_empresa.Controls.Add(this.label_domicilio);
+            this.groupBox_info_empresa.Controls.Add(this.label_mail);
+            this.groupBox_info_empresa.Controls.Add(this.label_razon_social);
+            this.groupBox_info_empresa.Controls.Add(this.label_telefono);
+            this.groupBox_info_empresa.Location = new System.Drawing.Point(14, 18);
+            this.groupBox_info_empresa.Name = "groupBox_info_empresa";
+            this.groupBox_info_empresa.Size = new System.Drawing.Size(395, 292);
+            this.groupBox_info_empresa.TabIndex = 21;
+            this.groupBox_info_empresa.TabStop = false;
+            this.groupBox_info_empresa.Text = "Informacion de la empresa";
             // 
             // textBox_tel_numero
             // 
@@ -153,19 +154,19 @@
             this.textBox_tel_caracteristica.Size = new System.Drawing.Size(47, 20);
             this.textBox_tel_caracteristica.TabIndex = 14;
             // 
-            // textBox_apellido
+            // textBox_domicilio
             // 
-            this.textBox_apellido.Location = new System.Drawing.Point(132, 126);
-            this.textBox_apellido.Name = "textBox_apellido";
-            this.textBox_apellido.Size = new System.Drawing.Size(200, 20);
-            this.textBox_apellido.TabIndex = 13;
+            this.textBox_domicilio.Location = new System.Drawing.Point(132, 126);
+            this.textBox_domicilio.Name = "textBox_domicilio";
+            this.textBox_domicilio.Size = new System.Drawing.Size(200, 20);
+            this.textBox_domicilio.TabIndex = 13;
             // 
-            // textBox_nombre
+            // textBox_razon_social
             // 
-            this.textBox_nombre.Location = new System.Drawing.Point(132, 95);
-            this.textBox_nombre.Name = "textBox_nombre";
-            this.textBox_nombre.Size = new System.Drawing.Size(200, 20);
-            this.textBox_nombre.TabIndex = 12;
+            this.textBox_razon_social.Location = new System.Drawing.Point(132, 95);
+            this.textBox_razon_social.Name = "textBox_razon_social";
+            this.textBox_razon_social.Size = new System.Drawing.Size(200, 20);
+            this.textBox_razon_social.TabIndex = 12;
             // 
             // label_domicilio
             // 
@@ -212,18 +213,18 @@
             this.Controls.Add(this.button_limpiar);
             this.Controls.Add(this.button_guardar);
             this.Controls.Add(this.button_cerrar);
-            this.Controls.Add(this.groupBox_Intereses);
+            this.Controls.Add(this.groupBox_principales_actividades);
             this.Controls.Add(this.groupBox_observaciones);
-            this.Controls.Add(this.groupBox_info_personal);
+            this.Controls.Add(this.groupBox_info_empresa);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Modificacion";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Modificar";
-            this.groupBox_Intereses.ResumeLayout(false);
+            this.groupBox_principales_actividades.ResumeLayout(false);
             this.groupBox_observaciones.ResumeLayout(false);
-            this.groupBox_info_personal.ResumeLayout(false);
-            this.groupBox_info_personal.PerformLayout();
+            this.groupBox_info_empresa.ResumeLayout(false);
+            this.groupBox_info_empresa.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -233,16 +234,16 @@
         private System.Windows.Forms.Button button_limpiar;
         private System.Windows.Forms.Button button_guardar;
         private System.Windows.Forms.Button button_cerrar;
-        private System.Windows.Forms.GroupBox groupBox_Intereses;
-        private System.Windows.Forms.RichTextBox richTextBox_intereses;
+        private System.Windows.Forms.GroupBox groupBox_principales_actividades;
+        private System.Windows.Forms.RichTextBox richTextBox_principales_actividades;
         private System.Windows.Forms.GroupBox groupBox_observaciones;
         private System.Windows.Forms.RichTextBox richTextBox_observaciones;
-        private System.Windows.Forms.GroupBox groupBox_info_personal;
+        private System.Windows.Forms.GroupBox groupBox_info_empresa;
         private System.Windows.Forms.TextBox textBox_tel_numero;
         private System.Windows.Forms.TextBox textBox_email;
         private System.Windows.Forms.TextBox textBox_tel_caracteristica;
-        private System.Windows.Forms.TextBox textBox_apellido;
-        private System.Windows.Forms.TextBox textBox_nombre;
+        private System.Windows.Forms.TextBox textBox_domicilio;
+        private System.Windows.Forms.TextBox textBox_razon_social;
         private System.Windows.Forms.Label label_domicilio;
         private System.Windows.Forms.Label label_mail;
         private System.Windows.Forms.Label label_razon_social;

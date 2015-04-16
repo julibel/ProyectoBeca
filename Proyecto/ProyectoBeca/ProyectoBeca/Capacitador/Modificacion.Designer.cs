@@ -37,9 +37,9 @@
             this.button_cerrar = new System.Windows.Forms.Button();
             this.groupBox_observaciones = new System.Windows.Forms.GroupBox();
             this.richTextBox_observaciones = new System.Windows.Forms.RichTextBox();
-            this.groupBox_formacion = new System.Windows.Forms.GroupBox();
+            this.groupBox_capacitacion = new System.Windows.Forms.GroupBox();
             this.button_agregar = new System.Windows.Forms.Button();
-            this.dataGridView_cursos_capacitaciones = new System.Windows.Forms.DataGridView();
+            this.dataGridView_areas_capacitacion = new System.Windows.Forms.DataGridView();
             this.groupBox_info_personal = new System.Windows.Forms.GroupBox();
             this.comboBox_barrio = new System.Windows.Forms.ComboBox();
             this.textBox_tel_numero = new System.Windows.Forms.TextBox();
@@ -58,8 +58,8 @@
             this.label_barrio = new System.Windows.Forms.Label();
             this.groupBox_estado.SuspendLayout();
             this.groupBox_observaciones.SuspendLayout();
-            this.groupBox_formacion.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_cursos_capacitaciones)).BeginInit();
+            this.groupBox_capacitacion.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_areas_capacitacion)).BeginInit();
             this.groupBox_info_personal.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -156,16 +156,16 @@
             this.richTextBox_observaciones.TabIndex = 6;
             this.richTextBox_observaciones.Text = "";
             // 
-            // groupBox_formacion
+            // groupBox_capacitacion
             // 
-            this.groupBox_formacion.Controls.Add(this.button_agregar);
-            this.groupBox_formacion.Controls.Add(this.dataGridView_cursos_capacitaciones);
-            this.groupBox_formacion.Location = new System.Drawing.Point(422, 10);
-            this.groupBox_formacion.Name = "groupBox_formacion";
-            this.groupBox_formacion.Size = new System.Drawing.Size(400, 292);
-            this.groupBox_formacion.TabIndex = 27;
-            this.groupBox_formacion.TabStop = false;
-            this.groupBox_formacion.Text = "Areas de capacitacion";
+            this.groupBox_capacitacion.Controls.Add(this.button_agregar);
+            this.groupBox_capacitacion.Controls.Add(this.dataGridView_areas_capacitacion);
+            this.groupBox_capacitacion.Location = new System.Drawing.Point(422, 10);
+            this.groupBox_capacitacion.Name = "groupBox_capacitacion";
+            this.groupBox_capacitacion.Size = new System.Drawing.Size(400, 292);
+            this.groupBox_capacitacion.TabIndex = 27;
+            this.groupBox_capacitacion.TabStop = false;
+            this.groupBox_capacitacion.Text = "Areas de capacitacion";
             // 
             // button_agregar
             // 
@@ -177,13 +177,13 @@
             this.button_agregar.UseVisualStyleBackColor = true;
             this.button_agregar.Click += new System.EventHandler(this.button_agregar_Click);
             // 
-            // dataGridView_cursos_capacitaciones
+            // dataGridView_areas_capacitacion
             // 
-            this.dataGridView_cursos_capacitaciones.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView_cursos_capacitaciones.Location = new System.Drawing.Point(23, 45);
-            this.dataGridView_cursos_capacitaciones.Name = "dataGridView_cursos_capacitaciones";
-            this.dataGridView_cursos_capacitaciones.Size = new System.Drawing.Size(358, 195);
-            this.dataGridView_cursos_capacitaciones.TabIndex = 19;
+            this.dataGridView_areas_capacitacion.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView_areas_capacitacion.Location = new System.Drawing.Point(23, 45);
+            this.dataGridView_areas_capacitacion.Name = "dataGridView_areas_capacitacion";
+            this.dataGridView_areas_capacitacion.Size = new System.Drawing.Size(358, 195);
+            this.dataGridView_areas_capacitacion.TabIndex = 19;
             // 
             // groupBox_info_personal
             // 
@@ -388,7 +388,7 @@
             this.Controls.Add(this.button_guardar);
             this.Controls.Add(this.button_cerrar);
             this.Controls.Add(this.groupBox_observaciones);
-            this.Controls.Add(this.groupBox_formacion);
+            this.Controls.Add(this.groupBox_capacitacion);
             this.Controls.Add(this.groupBox_info_personal);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
@@ -400,8 +400,8 @@
             this.groupBox_estado.ResumeLayout(false);
             this.groupBox_estado.PerformLayout();
             this.groupBox_observaciones.ResumeLayout(false);
-            this.groupBox_formacion.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_cursos_capacitaciones)).EndInit();
+            this.groupBox_capacitacion.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_areas_capacitacion)).EndInit();
             this.groupBox_info_personal.ResumeLayout(false);
             this.groupBox_info_personal.PerformLayout();
             this.ResumeLayout(false);
@@ -419,9 +419,9 @@
         private System.Windows.Forms.Button button_cerrar;
         private System.Windows.Forms.GroupBox groupBox_observaciones;
         private System.Windows.Forms.RichTextBox richTextBox_observaciones;
-        private System.Windows.Forms.GroupBox groupBox_formacion;
+        private System.Windows.Forms.GroupBox groupBox_capacitacion;
         private System.Windows.Forms.Button button_agregar;
-        private System.Windows.Forms.DataGridView dataGridView_cursos_capacitaciones;
+        private System.Windows.Forms.DataGridView dataGridView_areas_capacitacion;
         private System.Windows.Forms.GroupBox groupBox_info_personal;
         private System.Windows.Forms.ComboBox comboBox_barrio;
         private System.Windows.Forms.TextBox textBox_tel_numero;

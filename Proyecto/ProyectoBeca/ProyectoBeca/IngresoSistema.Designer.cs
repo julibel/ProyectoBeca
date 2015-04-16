@@ -28,41 +28,42 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.textBox_usuario = new System.Windows.Forms.TextBox();
+            this.textBox_contrasenia = new System.Windows.Forms.TextBox();
+            this.panel_inicio_sesion = new System.Windows.Forms.Panel();
             this.label_bienvenido = new System.Windows.Forms.Label();
             this.label_contrasenia = new System.Windows.Forms.Label();
             this.label_usuario = new System.Windows.Forms.Label();
             this.button_aceptar = new System.Windows.Forms.Button();
-            this.panel1.SuspendLayout();
+            this.panel_inicio_sesion.SuspendLayout();
             this.SuspendLayout();
             // 
-            // textBox1
+            // textBox_usuario
             // 
-            this.textBox1.Location = new System.Drawing.Point(144, 104);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(246, 20);
-            this.textBox1.TabIndex = 0;
+            this.textBox_usuario.Location = new System.Drawing.Point(144, 104);
+            this.textBox_usuario.Name = "textBox_usuario";
+            this.textBox_usuario.Size = new System.Drawing.Size(246, 20);
+            this.textBox_usuario.TabIndex = 0;
             // 
-            // textBox2
+            // textBox_contrasenia
             // 
-            this.textBox2.Location = new System.Drawing.Point(144, 140);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(246, 20);
-            this.textBox2.TabIndex = 1;
+            this.textBox_contrasenia.Location = new System.Drawing.Point(144, 140);
+            this.textBox_contrasenia.Name = "textBox_contrasenia";
+            this.textBox_contrasenia.Size = new System.Drawing.Size(246, 20);
+            this.textBox_contrasenia.TabIndex = 1;
+            this.textBox_contrasenia.UseSystemPasswordChar = true;
             // 
-            // panel1
+            // panel_inicio_sesion
             // 
-            this.panel1.Controls.Add(this.label_bienvenido);
-            this.panel1.Controls.Add(this.label_contrasenia);
-            this.panel1.Controls.Add(this.label_usuario);
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Location = new System.Drawing.Point(12, 12);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(447, 216);
-            this.panel1.TabIndex = 2;
+            this.panel_inicio_sesion.Controls.Add(this.label_bienvenido);
+            this.panel_inicio_sesion.Controls.Add(this.label_contrasenia);
+            this.panel_inicio_sesion.Controls.Add(this.label_usuario);
+            this.panel_inicio_sesion.Controls.Add(this.textBox_contrasenia);
+            this.panel_inicio_sesion.Controls.Add(this.textBox_usuario);
+            this.panel_inicio_sesion.Location = new System.Drawing.Point(12, 12);
+            this.panel_inicio_sesion.Name = "panel_inicio_sesion";
+            this.panel_inicio_sesion.Size = new System.Drawing.Size(447, 216);
+            this.panel_inicio_sesion.TabIndex = 2;
             // 
             // label_bienvenido
             // 
@@ -109,21 +110,23 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(472, 269);
             this.Controls.Add(this.button_aceptar);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel_inicio_sesion);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "IngresoSistema";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inicio sesion";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.panel_inicio_sesion.ResumeLayout(false);
+            this.panel_inicio_sesion.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.TextBox textBox_usuario;
+        private System.Windows.Forms.TextBox textBox_contrasenia;
+        private System.Windows.Forms.Panel panel_inicio_sesion;
         private System.Windows.Forms.Label label_bienvenido;
         private System.Windows.Forms.Label label_contrasenia;
         private System.Windows.Forms.Label label_usuario;

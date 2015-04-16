@@ -30,11 +30,11 @@
         {
             this.button_volver = new System.Windows.Forms.Button();
             this.groupBox_areas_posibles = new System.Windows.Forms.GroupBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridView_areas_capacitacion = new System.Windows.Forms.DataGridView();
             this.Area = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Seleccionar = new System.Windows.Forms.DataGridViewButtonColumn();
             this.groupBox_areas_posibles.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_areas_capacitacion)).BeginInit();
             this.SuspendLayout();
             // 
             // button_volver
@@ -49,7 +49,7 @@
             // 
             // groupBox_areas_posibles
             // 
-            this.groupBox_areas_posibles.Controls.Add(this.dataGridView1);
+            this.groupBox_areas_posibles.Controls.Add(this.dataGridView_areas_capacitacion);
             this.groupBox_areas_posibles.Location = new System.Drawing.Point(12, 9);
             this.groupBox_areas_posibles.Name = "groupBox_areas_posibles";
             this.groupBox_areas_posibles.Size = new System.Drawing.Size(600, 238);
@@ -57,16 +57,16 @@
             this.groupBox_areas_posibles.TabStop = false;
             this.groupBox_areas_posibles.Text = "Areas posibles";
             // 
-            // dataGridView1
+            // dataGridView_areas_capacitacion
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridView_areas_capacitacion.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView_areas_capacitacion.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Area,
             this.Seleccionar});
-            this.dataGridView1.Location = new System.Drawing.Point(6, 19);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(588, 205);
-            this.dataGridView1.TabIndex = 0;
+            this.dataGridView_areas_capacitacion.Location = new System.Drawing.Point(6, 19);
+            this.dataGridView_areas_capacitacion.Name = "dataGridView_areas_capacitacion";
+            this.dataGridView_areas_capacitacion.Size = new System.Drawing.Size(588, 205);
+            this.dataGridView_areas_capacitacion.TabIndex = 0;
             // 
             // Area
             // 
@@ -94,7 +94,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Areas de capacitacion";
             this.groupBox_areas_posibles.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_areas_capacitacion)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -103,7 +103,7 @@
 
         private System.Windows.Forms.Button button_volver;
         private System.Windows.Forms.GroupBox groupBox_areas_posibles;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridView_areas_capacitacion;
         private System.Windows.Forms.DataGridViewTextBoxColumn Area;
         private System.Windows.Forms.DataGridViewButtonColumn Seleccionar;
     }

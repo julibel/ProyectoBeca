@@ -31,9 +31,9 @@
             this.button_borrar = new System.Windows.Forms.Button();
             this.button_volver = new System.Windows.Forms.Button();
             this.groupBox_observaciones = new System.Windows.Forms.GroupBox();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.richTextBox_observaciones = new System.Windows.Forms.RichTextBox();
             this.groupBox_formacion = new System.Windows.Forms.GroupBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridView_cursos_capacitaciones = new System.Windows.Forms.DataGridView();
             this.comboBox_opciones_terciario = new System.Windows.Forms.ComboBox();
             this.comboBox_opciones_universitario = new System.Windows.Forms.ComboBox();
             this.comboBox_opciones_secundario = new System.Windows.Forms.ComboBox();
@@ -46,14 +46,14 @@
             this.groupBox_Intereses = new System.Windows.Forms.GroupBox();
             this.richTextBox_intereses = new System.Windows.Forms.RichTextBox();
             this.groupBox_info_personal = new System.Windows.Forms.GroupBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.comboBox_barrio = new System.Windows.Forms.ComboBox();
+            this.textBox_tel_numero = new System.Windows.Forms.TextBox();
+            this.textBox_cuit_cuil = new System.Windows.Forms.TextBox();
+            this.textBox_mail = new System.Windows.Forms.TextBox();
+            this.textBox_tel_caracteristica = new System.Windows.Forms.TextBox();
+            this.textBox_apellido = new System.Windows.Forms.TextBox();
+            this.textBox_nombre = new System.Windows.Forms.TextBox();
+            this.dateTimePicker_nacimiento = new System.Windows.Forms.DateTimePicker();
             this.label_apellido = new System.Windows.Forms.Label();
             this.label_mail = new System.Windows.Forms.Label();
             this.label_cuit_cuil = new System.Windows.Forms.Label();
@@ -64,7 +64,7 @@
             this.label_primaria = new System.Windows.Forms.Label();
             this.groupBox_observaciones.SuspendLayout();
             this.groupBox_formacion.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_cursos_capacitaciones)).BeginInit();
             this.groupBox_Intereses.SuspendLayout();
             this.groupBox_info_personal.SuspendLayout();
             this.SuspendLayout();
@@ -91,7 +91,7 @@
             // 
             // groupBox_observaciones
             // 
-            this.groupBox_observaciones.Controls.Add(this.richTextBox1);
+            this.groupBox_observaciones.Controls.Add(this.richTextBox_observaciones);
             this.groupBox_observaciones.Location = new System.Drawing.Point(422, 308);
             this.groupBox_observaciones.Name = "groupBox_observaciones";
             this.groupBox_observaciones.Size = new System.Drawing.Size(395, 114);
@@ -99,18 +99,18 @@
             this.groupBox_observaciones.TabStop = false;
             this.groupBox_observaciones.Text = "Observaciones";
             // 
-            // richTextBox1
+            // richTextBox_observaciones
             // 
-            this.richTextBox1.Enabled = false;
-            this.richTextBox1.Location = new System.Drawing.Point(34, 27);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(326, 61);
-            this.richTextBox1.TabIndex = 6;
-            this.richTextBox1.Text = "";
+            this.richTextBox_observaciones.Enabled = false;
+            this.richTextBox_observaciones.Location = new System.Drawing.Point(34, 27);
+            this.richTextBox_observaciones.Name = "richTextBox_observaciones";
+            this.richTextBox_observaciones.Size = new System.Drawing.Size(326, 61);
+            this.richTextBox_observaciones.TabIndex = 6;
+            this.richTextBox_observaciones.Text = "";
             // 
             // groupBox_formacion
             // 
-            this.groupBox_formacion.Controls.Add(this.dataGridView1);
+            this.groupBox_formacion.Controls.Add(this.dataGridView_cursos_capacitaciones);
             this.groupBox_formacion.Controls.Add(this.comboBox_opciones_terciario);
             this.groupBox_formacion.Controls.Add(this.comboBox_opciones_universitario);
             this.groupBox_formacion.Controls.Add(this.comboBox_opciones_secundario);
@@ -127,14 +127,15 @@
             this.groupBox_formacion.TabStop = false;
             this.groupBox_formacion.Text = "Formacion";
             // 
-            // dataGridView1
+            // dataGridView_cursos_capacitaciones
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Enabled = false;
-            this.dataGridView1.Location = new System.Drawing.Point(23, 168);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(358, 76);
-            this.dataGridView1.TabIndex = 19;
+            this.dataGridView_cursos_capacitaciones.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView_cursos_capacitaciones.Enabled = false;
+            this.dataGridView_cursos_capacitaciones.Location = new System.Drawing.Point(23, 168);
+            this.dataGridView_cursos_capacitaciones.Name = "dataGridView_cursos_capacitaciones";
+            this.dataGridView_cursos_capacitaciones.Size = new System.Drawing.Size(358, 76);
+            this.dataGridView_cursos_capacitaciones.TabIndex = 19;
+            this.dataGridView_cursos_capacitaciones.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // comboBox_opciones_terciario
             // 
@@ -252,14 +253,14 @@
             // 
             // groupBox_info_personal
             // 
-            this.groupBox_info_personal.Controls.Add(this.comboBox1);
-            this.groupBox_info_personal.Controls.Add(this.textBox5);
-            this.groupBox_info_personal.Controls.Add(this.textBox6);
-            this.groupBox_info_personal.Controls.Add(this.textBox4);
-            this.groupBox_info_personal.Controls.Add(this.textBox3);
-            this.groupBox_info_personal.Controls.Add(this.textBox2);
-            this.groupBox_info_personal.Controls.Add(this.textBox1);
-            this.groupBox_info_personal.Controls.Add(this.dateTimePicker1);
+            this.groupBox_info_personal.Controls.Add(this.comboBox_barrio);
+            this.groupBox_info_personal.Controls.Add(this.textBox_tel_numero);
+            this.groupBox_info_personal.Controls.Add(this.textBox_cuit_cuil);
+            this.groupBox_info_personal.Controls.Add(this.textBox_mail);
+            this.groupBox_info_personal.Controls.Add(this.textBox_tel_caracteristica);
+            this.groupBox_info_personal.Controls.Add(this.textBox_apellido);
+            this.groupBox_info_personal.Controls.Add(this.textBox_nombre);
+            this.groupBox_info_personal.Controls.Add(this.dateTimePicker_nacimiento);
             this.groupBox_info_personal.Controls.Add(this.label_apellido);
             this.groupBox_info_personal.Controls.Add(this.label_mail);
             this.groupBox_info_personal.Controls.Add(this.label_cuit_cuil);
@@ -274,11 +275,11 @@
             this.groupBox_info_personal.TabStop = false;
             this.groupBox_info_personal.Text = "Informacion personal";
             // 
-            // comboBox1
+            // comboBox_barrio
             // 
-            this.comboBox1.Enabled = false;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.comboBox_barrio.Enabled = false;
+            this.comboBox_barrio.FormattingEnabled = true;
+            this.comboBox_barrio.Items.AddRange(new object[] {
             "Agronomía",
             "Almagro",
             "Balvanera",
@@ -327,66 +328,69 @@
             "Villa Santa Rita",
             "Villa Soldati",
             "Villa Urquiza"});
-            this.comboBox1.Location = new System.Drawing.Point(153, 170);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(200, 21);
-            this.comboBox1.TabIndex = 19;
+            this.comboBox_barrio.Location = new System.Drawing.Point(153, 170);
+            this.comboBox_barrio.Name = "comboBox_barrio";
+            this.comboBox_barrio.Size = new System.Drawing.Size(200, 21);
+            this.comboBox_barrio.TabIndex = 19;
             // 
-            // textBox5
+            // textBox_tel_numero
             // 
-            this.textBox5.Enabled = false;
-            this.textBox5.Location = new System.Drawing.Point(206, 198);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(147, 20);
-            this.textBox5.TabIndex = 18;
+            this.textBox_tel_numero.Enabled = false;
+            this.textBox_tel_numero.Location = new System.Drawing.Point(206, 198);
+            this.textBox_tel_numero.Name = "textBox_tel_numero";
+            this.textBox_tel_numero.Size = new System.Drawing.Size(147, 20);
+            this.textBox_tel_numero.TabIndex = 18;
             // 
-            // textBox6
+            // textBox_cuit_cuil
             // 
-            this.textBox6.Enabled = false;
-            this.textBox6.Location = new System.Drawing.Point(153, 111);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(200, 20);
-            this.textBox6.TabIndex = 17;
+            this.textBox_cuit_cuil.Enabled = false;
+            this.textBox_cuit_cuil.Location = new System.Drawing.Point(153, 111);
+            this.textBox_cuit_cuil.Name = "textBox_cuit_cuil";
+            this.textBox_cuit_cuil.Size = new System.Drawing.Size(200, 20);
+            this.textBox_cuit_cuil.TabIndex = 17;
+            this.textBox_cuit_cuil.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
             // 
-            // textBox4
+            // textBox_mail
             // 
-            this.textBox4.Enabled = false;
-            this.textBox4.Location = new System.Drawing.Point(153, 224);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(200, 20);
-            this.textBox4.TabIndex = 15;
+            this.textBox_mail.Enabled = false;
+            this.textBox_mail.Location = new System.Drawing.Point(153, 224);
+            this.textBox_mail.Name = "textBox_mail";
+            this.textBox_mail.Size = new System.Drawing.Size(200, 20);
+            this.textBox_mail.TabIndex = 15;
             // 
-            // textBox3
+            // textBox_tel_caracteristica
             // 
-            this.textBox3.Enabled = false;
-            this.textBox3.Location = new System.Drawing.Point(153, 198);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(47, 20);
-            this.textBox3.TabIndex = 14;
+            this.textBox_tel_caracteristica.Enabled = false;
+            this.textBox_tel_caracteristica.Location = new System.Drawing.Point(153, 198);
+            this.textBox_tel_caracteristica.Name = "textBox_tel_caracteristica";
+            this.textBox_tel_caracteristica.Size = new System.Drawing.Size(47, 20);
+            this.textBox_tel_caracteristica.TabIndex = 14;
+            this.textBox_tel_caracteristica.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
-            // textBox2
+            // textBox_apellido
             // 
-            this.textBox2.Enabled = false;
-            this.textBox2.Location = new System.Drawing.Point(153, 80);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(200, 20);
-            this.textBox2.TabIndex = 13;
+            this.textBox_apellido.Enabled = false;
+            this.textBox_apellido.Location = new System.Drawing.Point(153, 80);
+            this.textBox_apellido.Name = "textBox_apellido";
+            this.textBox_apellido.Size = new System.Drawing.Size(200, 20);
+            this.textBox_apellido.TabIndex = 13;
+            this.textBox_apellido.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
-            // textBox1
+            // textBox_nombre
             // 
-            this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(153, 49);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(200, 20);
-            this.textBox1.TabIndex = 12;
+            this.textBox_nombre.Enabled = false;
+            this.textBox_nombre.Location = new System.Drawing.Point(153, 49);
+            this.textBox_nombre.Name = "textBox_nombre";
+            this.textBox_nombre.Size = new System.Drawing.Size(200, 20);
+            this.textBox_nombre.TabIndex = 12;
             // 
-            // dateTimePicker1
+            // dateTimePicker_nacimiento
             // 
-            this.dateTimePicker1.Enabled = false;
-            this.dateTimePicker1.Location = new System.Drawing.Point(153, 141);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker1.TabIndex = 11;
+            this.dateTimePicker_nacimiento.Enabled = false;
+            this.dateTimePicker_nacimiento.Location = new System.Drawing.Point(153, 141);
+            this.dateTimePicker_nacimiento.Name = "dateTimePicker_nacimiento";
+            this.dateTimePicker_nacimiento.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker_nacimiento.TabIndex = 11;
             // 
             // label_apellido
             // 
@@ -423,6 +427,7 @@
             this.label_nombre.Size = new System.Drawing.Size(44, 13);
             this.label_nombre.TabIndex = 0;
             this.label_nombre.Text = "Nombre";
+            this.label_nombre.Click += new System.EventHandler(this.label_nombre_Click);
             // 
             // label_telefono
             // 
@@ -483,7 +488,7 @@
             this.groupBox_observaciones.ResumeLayout(false);
             this.groupBox_formacion.ResumeLayout(false);
             this.groupBox_formacion.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_cursos_capacitaciones)).EndInit();
             this.groupBox_Intereses.ResumeLayout(false);
             this.groupBox_info_personal.ResumeLayout(false);
             this.groupBox_info_personal.PerformLayout();
@@ -497,9 +502,9 @@
         private System.Windows.Forms.Button button_borrar;
         private System.Windows.Forms.Button button_volver;
         private System.Windows.Forms.GroupBox groupBox_observaciones;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox richTextBox_observaciones;
         private System.Windows.Forms.GroupBox groupBox_formacion;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridView_cursos_capacitaciones;
         private System.Windows.Forms.ComboBox comboBox_opciones_terciario;
         private System.Windows.Forms.ComboBox comboBox_opciones_universitario;
         private System.Windows.Forms.ComboBox comboBox_opciones_secundario;
@@ -512,14 +517,14 @@
         private System.Windows.Forms.GroupBox groupBox_Intereses;
         private System.Windows.Forms.RichTextBox richTextBox_intereses;
         private System.Windows.Forms.GroupBox groupBox_info_personal;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.ComboBox comboBox_barrio;
+        private System.Windows.Forms.TextBox textBox_tel_numero;
+        private System.Windows.Forms.TextBox textBox_cuit_cuil;
+        private System.Windows.Forms.TextBox textBox_mail;
+        private System.Windows.Forms.TextBox textBox_tel_caracteristica;
+        private System.Windows.Forms.TextBox textBox_apellido;
+        private System.Windows.Forms.TextBox textBox_nombre;
+        private System.Windows.Forms.DateTimePicker dateTimePicker_nacimiento;
         private System.Windows.Forms.Label label_apellido;
         private System.Windows.Forms.Label label_mail;
         private System.Windows.Forms.Label label_cuit_cuil;

@@ -20,5 +20,10 @@ namespace ProyectoBeca.Empresa
         {
             this.Close();
         }
+
+        private void groupBox_Intereses_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -40,8 +40,8 @@ namespace ProyectoBeca.Capacitador
             textBox_email.Clear();
             dateTimePicker_nacimiento.Value = DateTime.Now;
             comboBox_barrio.SelectedIndex = -1;
-            dataGridView_cursos_capacitaciones.Rows.Clear();
-            dataGridView_cursos_capacitaciones.Refresh();
+            dataGridView_areas_capacitacion.Rows.Clear();
+            dataGridView_areas_capacitacion.Refresh();
             richTextBox_observaciones.Clear();
             radioButton_sin_verificar.Checked = false;
             radioButton_verificado.Checked = false;
@@ -58,6 +58,11 @@ namespace ProyectoBeca.Capacitador
         {
             Capacitador.Capacitacion capacitacion_capacitador = new Capacitador.Capacitacion();
             capacitacion_capacitador.Show();
+        }
+
+        private void dataGridView_cursos_capacitaciones_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

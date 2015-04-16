@@ -33,9 +33,9 @@
             this.button_cerrar = new System.Windows.Forms.Button();
             this.groupBox_observaciones = new System.Windows.Forms.GroupBox();
             this.richTextBox_observaciones = new System.Windows.Forms.RichTextBox();
-            this.groupBox_formacion = new System.Windows.Forms.GroupBox();
+            this.groupBox_areas_capacitacion = new System.Windows.Forms.GroupBox();
             this.button_agregar = new System.Windows.Forms.Button();
-            this.dataGridView_cursos_capacitaciones = new System.Windows.Forms.DataGridView();
+            this.dataGridView_areas_capacitacion = new System.Windows.Forms.DataGridView();
             this.groupBox_info_personal = new System.Windows.Forms.GroupBox();
             this.comboBox_barrio = new System.Windows.Forms.ComboBox();
             this.textBox_tel_numero = new System.Windows.Forms.TextBox();
@@ -53,12 +53,12 @@
             this.label_fecha_nac = new System.Windows.Forms.Label();
             this.label_barrio = new System.Windows.Forms.Label();
             this.groupBox_estado = new System.Windows.Forms.GroupBox();
-            this.radioButton_sin_verificar = new System.Windows.Forms.RadioButton();
-            this.radioButton_verificando = new System.Windows.Forms.RadioButton();
             this.radioButton_verificado = new System.Windows.Forms.RadioButton();
+            this.radioButton_verificando = new System.Windows.Forms.RadioButton();
+            this.radioButton_sin_verificar = new System.Windows.Forms.RadioButton();
             this.groupBox_observaciones.SuspendLayout();
-            this.groupBox_formacion.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_cursos_capacitaciones)).BeginInit();
+            this.groupBox_areas_capacitacion.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_areas_capacitacion)).BeginInit();
             this.groupBox_info_personal.SuspendLayout();
             this.groupBox_estado.SuspendLayout();
             this.SuspendLayout();
@@ -111,16 +111,16 @@
             this.richTextBox_observaciones.TabIndex = 6;
             this.richTextBox_observaciones.Text = "";
             // 
-            // groupBox_formacion
+            // groupBox_areas_capacitacion
             // 
-            this.groupBox_formacion.Controls.Add(this.button_agregar);
-            this.groupBox_formacion.Controls.Add(this.dataGridView_cursos_capacitaciones);
-            this.groupBox_formacion.Location = new System.Drawing.Point(422, 10);
-            this.groupBox_formacion.Name = "groupBox_formacion";
-            this.groupBox_formacion.Size = new System.Drawing.Size(400, 292);
-            this.groupBox_formacion.TabIndex = 20;
-            this.groupBox_formacion.TabStop = false;
-            this.groupBox_formacion.Text = "Areas de capacitacion";
+            this.groupBox_areas_capacitacion.Controls.Add(this.button_agregar);
+            this.groupBox_areas_capacitacion.Controls.Add(this.dataGridView_areas_capacitacion);
+            this.groupBox_areas_capacitacion.Location = new System.Drawing.Point(422, 10);
+            this.groupBox_areas_capacitacion.Name = "groupBox_areas_capacitacion";
+            this.groupBox_areas_capacitacion.Size = new System.Drawing.Size(400, 292);
+            this.groupBox_areas_capacitacion.TabIndex = 20;
+            this.groupBox_areas_capacitacion.TabStop = false;
+            this.groupBox_areas_capacitacion.Text = "Areas de capacitacion";
             // 
             // button_agregar
             // 
@@ -132,13 +132,14 @@
             this.button_agregar.UseVisualStyleBackColor = true;
             this.button_agregar.Click += new System.EventHandler(this.button_agregar_Click);
             // 
-            // dataGridView_cursos_capacitaciones
+            // dataGridView_areas_capacitacion
             // 
-            this.dataGridView_cursos_capacitaciones.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView_cursos_capacitaciones.Location = new System.Drawing.Point(23, 45);
-            this.dataGridView_cursos_capacitaciones.Name = "dataGridView_cursos_capacitaciones";
-            this.dataGridView_cursos_capacitaciones.Size = new System.Drawing.Size(358, 195);
-            this.dataGridView_cursos_capacitaciones.TabIndex = 19;
+            this.dataGridView_areas_capacitacion.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView_areas_capacitacion.Location = new System.Drawing.Point(23, 45);
+            this.dataGridView_areas_capacitacion.Name = "dataGridView_areas_capacitacion";
+            this.dataGridView_areas_capacitacion.Size = new System.Drawing.Size(358, 195);
+            this.dataGridView_areas_capacitacion.TabIndex = 19;
+            this.dataGridView_areas_capacitacion.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_cursos_capacitaciones_CellContentClick);
             // 
             // groupBox_info_personal
             // 
@@ -344,16 +345,16 @@
             this.groupBox_estado.TabStop = false;
             this.groupBox_estado.Text = "Estado";
             // 
-            // radioButton_sin_verificar
+            // radioButton_verificado
             // 
-            this.radioButton_sin_verificar.AutoSize = true;
-            this.radioButton_sin_verificar.Location = new System.Drawing.Point(158, 26);
-            this.radioButton_sin_verificar.Name = "radioButton_sin_verificar";
-            this.radioButton_sin_verificar.Size = new System.Drawing.Size(80, 17);
-            this.radioButton_sin_verificar.TabIndex = 0;
-            this.radioButton_sin_verificar.TabStop = true;
-            this.radioButton_sin_verificar.Text = "Sin verificar";
-            this.radioButton_sin_verificar.UseVisualStyleBackColor = true;
+            this.radioButton_verificado.AutoSize = true;
+            this.radioButton_verificado.Location = new System.Drawing.Point(157, 72);
+            this.radioButton_verificado.Name = "radioButton_verificado";
+            this.radioButton_verificado.Size = new System.Drawing.Size(72, 17);
+            this.radioButton_verificado.TabIndex = 2;
+            this.radioButton_verificado.TabStop = true;
+            this.radioButton_verificado.Text = "Verificado";
+            this.radioButton_verificado.UseVisualStyleBackColor = true;
             // 
             // radioButton_verificando
             // 
@@ -366,16 +367,16 @@
             this.radioButton_verificando.Text = "Verificando";
             this.radioButton_verificando.UseVisualStyleBackColor = true;
             // 
-            // radioButton_verificado
+            // radioButton_sin_verificar
             // 
-            this.radioButton_verificado.AutoSize = true;
-            this.radioButton_verificado.Location = new System.Drawing.Point(157, 72);
-            this.radioButton_verificado.Name = "radioButton_verificado";
-            this.radioButton_verificado.Size = new System.Drawing.Size(72, 17);
-            this.radioButton_verificado.TabIndex = 2;
-            this.radioButton_verificado.TabStop = true;
-            this.radioButton_verificado.Text = "Verificado";
-            this.radioButton_verificado.UseVisualStyleBackColor = true;
+            this.radioButton_sin_verificar.AutoSize = true;
+            this.radioButton_sin_verificar.Location = new System.Drawing.Point(158, 26);
+            this.radioButton_sin_verificar.Name = "radioButton_sin_verificar";
+            this.radioButton_sin_verificar.Size = new System.Drawing.Size(80, 17);
+            this.radioButton_sin_verificar.TabIndex = 0;
+            this.radioButton_sin_verificar.TabStop = true;
+            this.radioButton_sin_verificar.Text = "Sin verificar";
+            this.radioButton_sin_verificar.UseVisualStyleBackColor = true;
             // 
             // Alta
             // 
@@ -388,7 +389,7 @@
             this.Controls.Add(this.button_guardar);
             this.Controls.Add(this.button_cerrar);
             this.Controls.Add(this.groupBox_observaciones);
-            this.Controls.Add(this.groupBox_formacion);
+            this.Controls.Add(this.groupBox_areas_capacitacion);
             this.Controls.Add(this.groupBox_info_personal);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
@@ -398,8 +399,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Alta";
             this.groupBox_observaciones.ResumeLayout(false);
-            this.groupBox_formacion.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_cursos_capacitaciones)).EndInit();
+            this.groupBox_areas_capacitacion.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_areas_capacitacion)).EndInit();
             this.groupBox_info_personal.ResumeLayout(false);
             this.groupBox_info_personal.PerformLayout();
             this.groupBox_estado.ResumeLayout(false);
@@ -415,9 +416,9 @@
         private System.Windows.Forms.Button button_cerrar;
         private System.Windows.Forms.GroupBox groupBox_observaciones;
         private System.Windows.Forms.RichTextBox richTextBox_observaciones;
-        private System.Windows.Forms.GroupBox groupBox_formacion;
+        private System.Windows.Forms.GroupBox groupBox_areas_capacitacion;
         private System.Windows.Forms.Button button_agregar;
-        private System.Windows.Forms.DataGridView dataGridView_cursos_capacitaciones;
+        private System.Windows.Forms.DataGridView dataGridView_areas_capacitacion;
         private System.Windows.Forms.GroupBox groupBox_info_personal;
         private System.Windows.Forms.ComboBox comboBox_barrio;
         private System.Windows.Forms.TextBox textBox_tel_numero;

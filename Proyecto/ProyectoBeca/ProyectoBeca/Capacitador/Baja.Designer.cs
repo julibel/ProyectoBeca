@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button_limpiar = new System.Windows.Forms.Button();
+            this.button_borrar = new System.Windows.Forms.Button();
             this.button_cerrar = new System.Windows.Forms.Button();
             this.groupBox_observaciones = new System.Windows.Forms.GroupBox();
             this.richTextBox_observaciones = new System.Windows.Forms.RichTextBox();
-            this.groupBox_formacion = new System.Windows.Forms.GroupBox();
-            this.dataGridView_cursos_capacitaciones = new System.Windows.Forms.DataGridView();
+            this.groupBox_areas_capacitacion = new System.Windows.Forms.GroupBox();
+            this.dataGridView_areas_capacitacion = new System.Windows.Forms.DataGridView();
             this.groupBox_info_personal = new System.Windows.Forms.GroupBox();
             this.comboBox_barrio = new System.Windows.Forms.ComboBox();
             this.textBox_tel_numero = new System.Windows.Forms.TextBox();
@@ -50,26 +50,26 @@
             this.label_telefono = new System.Windows.Forms.Label();
             this.label_fecha_nac = new System.Windows.Forms.Label();
             this.label_barrio = new System.Windows.Forms.Label();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.radioButton_sin_verificar = new System.Windows.Forms.RadioButton();
+            this.radioButton_verificando = new System.Windows.Forms.RadioButton();
+            this.radioButton_verificado = new System.Windows.Forms.RadioButton();
             this.groupBox_estado = new System.Windows.Forms.GroupBox();
             this.groupBox_observaciones.SuspendLayout();
-            this.groupBox_formacion.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_cursos_capacitaciones)).BeginInit();
+            this.groupBox_areas_capacitacion.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_areas_capacitacion)).BeginInit();
             this.groupBox_info_personal.SuspendLayout();
             this.groupBox_estado.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button_limpiar
+            // button_borrar
             // 
-            this.button_limpiar.Location = new System.Drawing.Point(661, 428);
-            this.button_limpiar.Name = "button_limpiar";
-            this.button_limpiar.Size = new System.Drawing.Size(75, 23);
-            this.button_limpiar.TabIndex = 30;
-            this.button_limpiar.Text = "Borrar";
-            this.button_limpiar.UseVisualStyleBackColor = true;
-            this.button_limpiar.Click += new System.EventHandler(this.button_limpiar_Click);
+            this.button_borrar.Location = new System.Drawing.Point(661, 428);
+            this.button_borrar.Name = "button_borrar";
+            this.button_borrar.Size = new System.Drawing.Size(75, 23);
+            this.button_borrar.TabIndex = 30;
+            this.button_borrar.Text = "Borrar";
+            this.button_borrar.UseVisualStyleBackColor = true;
+            this.button_borrar.Click += new System.EventHandler(this.button_limpiar_Click);
             // 
             // button_cerrar
             // 
@@ -93,29 +93,32 @@
             // 
             // richTextBox_observaciones
             // 
+            this.richTextBox_observaciones.Enabled = false;
             this.richTextBox_observaciones.Location = new System.Drawing.Point(34, 27);
             this.richTextBox_observaciones.Name = "richTextBox_observaciones";
             this.richTextBox_observaciones.Size = new System.Drawing.Size(326, 61);
             this.richTextBox_observaciones.TabIndex = 6;
             this.richTextBox_observaciones.Text = "";
             // 
-            // groupBox_formacion
+            // groupBox_areas_capacitacion
             // 
-            this.groupBox_formacion.Controls.Add(this.dataGridView_cursos_capacitaciones);
-            this.groupBox_formacion.Location = new System.Drawing.Point(422, 10);
-            this.groupBox_formacion.Name = "groupBox_formacion";
-            this.groupBox_formacion.Size = new System.Drawing.Size(400, 292);
-            this.groupBox_formacion.TabIndex = 27;
-            this.groupBox_formacion.TabStop = false;
-            this.groupBox_formacion.Text = "Areas de capacitacion";
+            this.groupBox_areas_capacitacion.Controls.Add(this.dataGridView_areas_capacitacion);
+            this.groupBox_areas_capacitacion.Location = new System.Drawing.Point(422, 10);
+            this.groupBox_areas_capacitacion.Name = "groupBox_areas_capacitacion";
+            this.groupBox_areas_capacitacion.Size = new System.Drawing.Size(400, 292);
+            this.groupBox_areas_capacitacion.TabIndex = 27;
+            this.groupBox_areas_capacitacion.TabStop = false;
+            this.groupBox_areas_capacitacion.Text = "Areas de capacitacion";
+            this.groupBox_areas_capacitacion.Enter += new System.EventHandler(this.groupBox_formacion_Enter);
             // 
-            // dataGridView_cursos_capacitaciones
+            // dataGridView_areas_capacitacion
             // 
-            this.dataGridView_cursos_capacitaciones.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView_cursos_capacitaciones.Location = new System.Drawing.Point(23, 45);
-            this.dataGridView_cursos_capacitaciones.Name = "dataGridView_cursos_capacitaciones";
-            this.dataGridView_cursos_capacitaciones.Size = new System.Drawing.Size(358, 199);
-            this.dataGridView_cursos_capacitaciones.TabIndex = 19;
+            this.dataGridView_areas_capacitacion.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView_areas_capacitacion.Enabled = false;
+            this.dataGridView_areas_capacitacion.Location = new System.Drawing.Point(23, 45);
+            this.dataGridView_areas_capacitacion.Name = "dataGridView_areas_capacitacion";
+            this.dataGridView_areas_capacitacion.Size = new System.Drawing.Size(358, 199);
+            this.dataGridView_areas_capacitacion.TabIndex = 19;
             // 
             // groupBox_info_personal
             // 
@@ -143,6 +146,7 @@
             // 
             // comboBox_barrio
             // 
+            this.comboBox_barrio.Enabled = false;
             this.comboBox_barrio.Items.AddRange(new object[] {
             "Agronomía",
             "Almagro",
@@ -199,6 +203,7 @@
             // 
             // textBox_tel_numero
             // 
+            this.textBox_tel_numero.Enabled = false;
             this.textBox_tel_numero.Location = new System.Drawing.Point(206, 198);
             this.textBox_tel_numero.Name = "textBox_tel_numero";
             this.textBox_tel_numero.Size = new System.Drawing.Size(147, 20);
@@ -206,6 +211,7 @@
             // 
             // textBox_cuit_cuil
             // 
+            this.textBox_cuit_cuil.Enabled = false;
             this.textBox_cuit_cuil.Location = new System.Drawing.Point(153, 111);
             this.textBox_cuit_cuil.Name = "textBox_cuit_cuil";
             this.textBox_cuit_cuil.Size = new System.Drawing.Size(200, 20);
@@ -213,6 +219,7 @@
             // 
             // textBox_email
             // 
+            this.textBox_email.Enabled = false;
             this.textBox_email.Location = new System.Drawing.Point(153, 224);
             this.textBox_email.Name = "textBox_email";
             this.textBox_email.Size = new System.Drawing.Size(200, 20);
@@ -220,6 +227,7 @@
             // 
             // textBox_tel_caracteristica
             // 
+            this.textBox_tel_caracteristica.Enabled = false;
             this.textBox_tel_caracteristica.Location = new System.Drawing.Point(153, 198);
             this.textBox_tel_caracteristica.Name = "textBox_tel_caracteristica";
             this.textBox_tel_caracteristica.Size = new System.Drawing.Size(47, 20);
@@ -227,6 +235,7 @@
             // 
             // textBox_apellido
             // 
+            this.textBox_apellido.Enabled = false;
             this.textBox_apellido.Location = new System.Drawing.Point(153, 80);
             this.textBox_apellido.Name = "textBox_apellido";
             this.textBox_apellido.Size = new System.Drawing.Size(200, 20);
@@ -234,6 +243,7 @@
             // 
             // textBox_nombre
             // 
+            this.textBox_nombre.Enabled = false;
             this.textBox_nombre.Location = new System.Drawing.Point(153, 49);
             this.textBox_nombre.Name = "textBox_nombre";
             this.textBox_nombre.Size = new System.Drawing.Size(200, 20);
@@ -241,6 +251,7 @@
             // 
             // dateTimePicker_nacimiento
             // 
+            this.dateTimePicker_nacimiento.Enabled = false;
             this.dateTimePicker_nacimiento.Location = new System.Drawing.Point(153, 141);
             this.dateTimePicker_nacimiento.Name = "dateTimePicker_nacimiento";
             this.dateTimePicker_nacimiento.Size = new System.Drawing.Size(200, 20);
@@ -309,44 +320,48 @@
             this.label_barrio.TabIndex = 8;
             this.label_barrio.Text = "Barrio";
             // 
-            // radioButton1
+            // radioButton_sin_verificar
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(157, 26);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(80, 17);
-            this.radioButton1.TabIndex = 0;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Sin verificar";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton_sin_verificar.AutoSize = true;
+            this.radioButton_sin_verificar.Enabled = false;
+            this.radioButton_sin_verificar.Location = new System.Drawing.Point(157, 26);
+            this.radioButton_sin_verificar.Name = "radioButton_sin_verificar";
+            this.radioButton_sin_verificar.Size = new System.Drawing.Size(80, 17);
+            this.radioButton_sin_verificar.TabIndex = 0;
+            this.radioButton_sin_verificar.TabStop = true;
+            this.radioButton_sin_verificar.Text = "Sin verificar";
+            this.radioButton_sin_verificar.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // radioButton_verificando
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(157, 49);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(78, 17);
-            this.radioButton2.TabIndex = 1;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Verificando";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButton_verificando.AutoSize = true;
+            this.radioButton_verificando.Enabled = false;
+            this.radioButton_verificando.Location = new System.Drawing.Point(157, 49);
+            this.radioButton_verificando.Name = "radioButton_verificando";
+            this.radioButton_verificando.Size = new System.Drawing.Size(78, 17);
+            this.radioButton_verificando.TabIndex = 1;
+            this.radioButton_verificando.TabStop = true;
+            this.radioButton_verificando.Text = "Verificando";
+            this.radioButton_verificando.UseVisualStyleBackColor = true;
             // 
-            // radioButton3
+            // radioButton_verificado
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(157, 72);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(72, 17);
-            this.radioButton3.TabIndex = 2;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Verificado";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.radioButton_verificado.AutoSize = true;
+            this.radioButton_verificado.Enabled = false;
+            this.radioButton_verificado.Location = new System.Drawing.Point(157, 72);
+            this.radioButton_verificado.Name = "radioButton_verificado";
+            this.radioButton_verificado.Size = new System.Drawing.Size(72, 17);
+            this.radioButton_verificado.TabIndex = 2;
+            this.radioButton_verificado.TabStop = true;
+            this.radioButton_verificado.Text = "Verificado";
+            this.radioButton_verificado.UseVisualStyleBackColor = true;
+            this.radioButton_verificado.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
             // 
             // groupBox_estado
             // 
-            this.groupBox_estado.Controls.Add(this.radioButton3);
-            this.groupBox_estado.Controls.Add(this.radioButton2);
-            this.groupBox_estado.Controls.Add(this.radioButton1);
+            this.groupBox_estado.Controls.Add(this.radioButton_verificado);
+            this.groupBox_estado.Controls.Add(this.radioButton_verificando);
+            this.groupBox_estado.Controls.Add(this.radioButton_sin_verificar);
             this.groupBox_estado.Location = new System.Drawing.Point(422, 308);
             this.groupBox_estado.Name = "groupBox_estado";
             this.groupBox_estado.Size = new System.Drawing.Size(395, 114);
@@ -361,10 +376,10 @@
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(834, 461);
             this.Controls.Add(this.groupBox_estado);
-            this.Controls.Add(this.button_limpiar);
+            this.Controls.Add(this.button_borrar);
             this.Controls.Add(this.button_cerrar);
             this.Controls.Add(this.groupBox_observaciones);
-            this.Controls.Add(this.groupBox_formacion);
+            this.Controls.Add(this.groupBox_areas_capacitacion);
             this.Controls.Add(this.groupBox_info_personal);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
@@ -374,8 +389,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Baja";
             this.groupBox_observaciones.ResumeLayout(false);
-            this.groupBox_formacion.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_cursos_capacitaciones)).EndInit();
+            this.groupBox_areas_capacitacion.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_areas_capacitacion)).EndInit();
             this.groupBox_info_personal.ResumeLayout(false);
             this.groupBox_info_personal.PerformLayout();
             this.groupBox_estado.ResumeLayout(false);
@@ -386,12 +401,12 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button_limpiar;
+        private System.Windows.Forms.Button button_borrar;
         private System.Windows.Forms.Button button_cerrar;
         private System.Windows.Forms.GroupBox groupBox_observaciones;
         private System.Windows.Forms.RichTextBox richTextBox_observaciones;
-        private System.Windows.Forms.GroupBox groupBox_formacion;
-        private System.Windows.Forms.DataGridView dataGridView_cursos_capacitaciones;
+        private System.Windows.Forms.GroupBox groupBox_areas_capacitacion;
+        private System.Windows.Forms.DataGridView dataGridView_areas_capacitacion;
         private System.Windows.Forms.GroupBox groupBox_info_personal;
         private System.Windows.Forms.ComboBox comboBox_barrio;
         private System.Windows.Forms.TextBox textBox_tel_numero;
@@ -408,9 +423,9 @@
         private System.Windows.Forms.Label label_telefono;
         private System.Windows.Forms.Label label_fecha_nac;
         private System.Windows.Forms.Label label_barrio;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton3;
+        private System.Windows.Forms.RadioButton radioButton_sin_verificar;
+        private System.Windows.Forms.RadioButton radioButton_verificando;
+        private System.Windows.Forms.RadioButton radioButton_verificado;
         private System.Windows.Forms.GroupBox groupBox_estado;
     }
 }

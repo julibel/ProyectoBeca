@@ -15,5 +15,25 @@ namespace ProyectoBeca.Capacitacion
         {
             InitializeComponent();
         }
+
+        private void button_cerrar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void comboBox_area_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox_formacion_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

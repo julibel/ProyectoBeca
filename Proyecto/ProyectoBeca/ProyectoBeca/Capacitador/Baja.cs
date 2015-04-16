@@ -32,5 +32,15 @@ namespace ProyectoBeca.Capacitador
         {
             this.Close();
         }
+
+        private void groupBox_formacion_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton3_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
